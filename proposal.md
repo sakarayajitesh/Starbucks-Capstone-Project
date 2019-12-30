@@ -1,7 +1,6 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Proposal
-Ajitesh Sakaray
-
+Ajitesh Sakaray  
 December 30th, 2019
 
 ## Proposal
