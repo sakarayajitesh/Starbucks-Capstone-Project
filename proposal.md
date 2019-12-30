@@ -21,9 +21,13 @@ My motivation behind choosing this problem are, firstly this is a more releastic
 _(In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.)_
 
 ### Problem Statement
-_(approx. 1 paragraph)_
+Building a model that predicts whether or not someone will respond to an offer based on given demographics and offer type.Thus there will be two possible outputs from the model, making it **Binary Classification**: 
+1) A person will respond to an offer (1)
+2) A person will not respond to an offer(0)
 
-In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once).
+The metrics that will be used in solving this problem is **Accuracy**. Based on this metric we will calculate how likely a person is going to respond to this offer making it as 0 or 1.
+
+_(In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once).)_
 
 ### Datasets and Inputs
 _(approx. 2-3 paragraphs)_
