@@ -14,7 +14,11 @@ Not all users receive the same offer, and that is the challenge to solve with th
 
 Every offer has a validity period before the offer expires. As an example, a BOGO offer might be valid for only 5 days. You'll see in the data set that informational offers have a validity period even though these ads are merely providing information about a product; for example, if an informational offer has 7 days of validity, you can assume the customer is feeling the influence of the offer for 7 days after receiving the advertisement.
 
-In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.
+If the company sends more offers or irrelavent offers to a person then there is no use. That's why they should send only relavent offers to a person who is likely going to use this offer which benefits the company.We need to predict who are more likely going to use a certain offer and send that offer only to them to make company beneficial.
+
+My motivation behind choosing this problem are, firstly this is a more releastic problem which I see in the day-to-day like where I will be receiving the offers which I don't really like. Second thing is felt this as challenging task to be completed.
+
+_(In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.)_
 
 ### Problem Statement
 _(approx. 1 paragraph)_
