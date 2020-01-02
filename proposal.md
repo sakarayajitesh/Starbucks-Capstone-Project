@@ -30,9 +30,39 @@ The metrics that will be used in solving this problem is **Accuracy**. Based on 
 _(In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once).)_
 
 ### Datasets and Inputs
-_(approx. 2-3 paragraphs)_
+The data is contained in three files:
 
-In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.
+1. portfolio.json - containing offer ids and meta data about each offer (duration, type, etc.)
+2. profile.json - demographic data for each customer
+3. transcript.json - records for transactions, offers received, offers viewed, and offers completed
+
+Here is the schema and explanation of each variable in the files:
+
+**1. portfolio.json**
+
+* id (string) - offer id
+* offer_type (string) - type of offer ie BOGO, discount, informational
+* difficulty (int) - minimum required spend to complete an offer
+* reward (int) - reward given for completing an offer
+* duration (int) - time for offer to be open, in days
+* channels (list of strings)
+
+**2. profile.json**
+
+* age (int) - age of the customer
+* became_member_on (int) - date when customer created an app account
+* gender (str) - gender of the customer (note some entries contain 'O' for other rather than M or F)
+* id (str) - customer id
+* income (float) - customer's income
+
+**3. transcript.json**
+
+* event (str) - record description (ie transaction, offer received, offer viewed, etc.)
+* person (str) - customer id
+* time (int) - time in hours since start of test. The data begins at time t=0
+* value - (dict of strings) - either an offer id or transaction amount depending on the record
+
+_(In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.)_
 
 ### Solution Statement
 _(approx. 1 paragraph)_
