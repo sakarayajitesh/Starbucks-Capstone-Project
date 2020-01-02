@@ -65,9 +65,15 @@ Here is the schema and explanation of each variable in the files:
 _(In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.)_
 
 ### Solution Statement
-_(approx. 1 paragraph)_
+The solution for this problem will be to combine the three files and make a single file or table which will have all the demographics of the person and offer details and the predicted output (i.e., a person will or not respond to the offer given).
 
-In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).
+By using this table we will pass the input to the model and get the output as 0 or 1.
+
+We need to take **transcript.json** file or table first. Here by using the field **_person_**, we can extract person details from **profile.json** file using **_id_** field.
+
+By using the field **_value_** in **transcript.json** file which has a json object **_offer_id_**, we can extract the details of the offer from **potfolio.json** file using **_id_** field.
+
+_(In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).)_
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
