@@ -78,7 +78,9 @@ By using the field **_value_** in **transcript.json** file which has a json obje
 _(In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).)_
 
 ### Benchmark Model
-Since it is a binary classification problem we need to use a binary classifier to solve
+Since it is a binary classification problem we need to use a Binary Classifier to solve this problem which will get output as 0 or 1. We can also try to use Deep Neural Networks to solve and check on which model it performs better by tuning the hyperparameters.
+
+We get the output of this model as the percentage of which a person is likely to respond an given offer. Based on the percentage we can consider that if output is less than 50% then the person is likely to reject an offer.
 
 _(In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.)_
 
