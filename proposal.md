@@ -18,7 +18,6 @@ If the company sends more offers or irrelavent offers to a person then there is 
 
 My motivation behind choosing this problem are, firstly this is a more releastic problem which I see in the day-to-day like where I will be receiving the offers which I don't really like. Second thing is felt this as challenging task to be completed.
 
-_(In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.)_
 
 ### Problem Statement
 Building a model that predicts whether or not someone will respond to an offer based on given demographics and offer type.Thus there will be two possible outputs from the model, making it **Binary Classification**: 
@@ -27,7 +26,6 @@ Building a model that predicts whether or not someone will respond to an offer b
 
 The metrics that will be used in solving this problem is **Accuracy**. Based on this metric we will calculate how likely a person is going to respond to this offer making it as 0 or 1.
 
-_(In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once).)_
 
 ### Datasets and Inputs
 The data is contained in three files:
@@ -64,7 +62,6 @@ Here is the schema and explanation of each variable in the files:
 
 Here we can see some data is in number form and some data is in characters. Since a Machine Learning Model doesn't take input in characters, we need to convert the field which are not numbers to numbers by using **one-hot-encoding** method. Since some of the values are high in number, it will be computationally expensive task. That's why need to reduce these values such as field **_income_** in **profile.json** using **PCA** method.
  
-_(In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.)_
 
 ### Solution Statement
 The solution for this problem will be to combine the three files and make a single file or table which will have all the demographics of the person and offer details and the predicted output (i.e., a person will or not respond to the offer given).
@@ -75,21 +72,18 @@ We need to take **transcript.json** file or table first. Here by using the field
 
 By using the field **_value_** in **transcript.json** file which has a json object **_offer_id_**, we can extract the details of the offer from **potfolio.json** file using **_id_** field.
 
-_(In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).)_
 
 ### Benchmark Model
 Since it is a binary classification problem we need to use a Binary Classifier to solve this problem which will get output as 0 or 1. We can also try to use Deep Neural Networks to solve and check on which model it performs better by tuning the hyperparameters.
 
 We get the output of this model as the percentage of which a person is likely to respond an given offer. Based on the percentage we can consider that if output is less than 50% then the person is likely to reject an offer.
 
-_(In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.)_
 
 ### Evaluation Metrics
 Evaluation  metrics for this model will be based on **Accuracy percentage**.
 
 ``Accuracy = No. of predicted correct / No. of actual correct``
 
-_(In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).)_
 
 ### Project Design
 The implementation workflow for this project will include three steps.
@@ -119,14 +113,5 @@ This step will be done if the previous model is not trained enough or have less 
 
 This will be the final step of the process. If the model is successfully trained will good amount of accuracy then we are now ready to predict the data.
 
-_(In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.)_
-
 -----------
 
-**Before submitting your proposal, ask yourself. . .**
-
-- Does the proposal you have written follow a well-organized structure similar to that of the project template?
-- Is each section (particularly **Solution Statement** and **Project Design**) written in a clear, concise and specific fashion? Are there any ambiguous terms or phrases that need clarification?
-- Would the intended audience of your project be able to understand your proposal?
-- Have you properly proofread your proposal to assure there are minimal grammatical and spelling mistakes?
-- Are all the resources used for this project correctly cited and referenced?
