@@ -87,14 +87,39 @@ _(In this section, provide the details for a benchmark model or result that rela
 ### Evaluation Metrics
 Evaluation  metrics for this model will be based on **Accuracy percentage**.
 
-``Accuracy = No. of predicted correct / No. of acutal correct``
+``Accuracy = No. of predicted correct / No. of actual correct``
 
 _(In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).)_
 
 ### Project Design
-_(approx. 1 page)_
+The implementation workflow for this project will include three steps.
+1. Data Preparation
+2. Model Training
+3. Model Tuning
+4. Model Prediction
 
-In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.
+#### 1. Data Preparation :
+
+* Building the Dataset : We have 3 datasets namely portfolio.json, profile.json and transcript.json. We need to combine these 3 datasets to make a single dataset using the common field in each dataset. For example we have field **_customer_id_** as common field between profile.json and transcript.json.
+
+* Feature Exploration : Checking the co-relation between different fields in the table and understand the dataset. If any fields are more similar to each other then we can remove these redundant features and if require add more features from them.
+
+* Preparing the Dataset : As the Machine Learning Model doesn't understand categorical data we need to use one-hot-encoding method
+for the fields with categorial data. For example the field **_gender_** in profile.json has categorial values.So we need to do one-hot_encoding for this field also we need to normalize the data using PCA so that a model can be trained faster.
+
+#### 2. Model Training :
+
+As we are determing if the person will respond to an offer or not, it will be binary classification problem.We can use Binary Classifier or Deep Neural Networks to train the model as this will be ideal for solving this type of problem. After the model has been trained we can check the **accuracy** of the model and decide whether to train the model again or to stop training.
+
+#### 3. Model Tuning :
+
+This step will be done if the previous model is not trained enough or have less accuracy after model training step. Things involved when tuning the model is increasing/decreasing the epochs, hidden layers, learning rate etc and check for the accuracy. This step will be trail and error method as to guess what hyperparameters to change and check for the model improvement.
+
+#### 4. Model Prediction :
+
+This will be the final step of the process. If the model is successfully trained will good amount of accuracy then we are now ready to predict the data.
+
+_(In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.)_
 
 -----------
 
