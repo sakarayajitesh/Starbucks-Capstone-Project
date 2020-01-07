@@ -1,15 +1,25 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Project
-Ajitesh Sakaray 
+Ajitesh Sakaray  
 January 7th, 2020
 
 ## I. Definition
 _(approx. 1-2 pages)_
 
 ### Project Overview
-In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
+Starbucks Corporation is an American coffee company and coffeehouse chain. Starbucks was founded in Seattle, Washington, in 1971. As of early 2019, the company operates over 30,000 locations worldwide.
+
+Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks.
+
+Not all users receive the same offer, and that is the challenge to solve with this data set.
+
+Every offer has a validity period before the offer expires. As an example, a BOGO offer might be valid for only 5 days. You'll see in the data set that informational offers have a validity period even though these ads are merely providing information about a product; for example, if an informational offer has 7 days of validity, you can assume the customer is feeling the influence of the offer for 7 days after receiving the advertisement.
+
+If the company sends more offers or irrelavent offers to a person then there is no use. That's why they should send only relavent offers to a person who is likely going to use this offer which benefits the company.We need to predict who are more likely going to use a certain offer and send that offer only to them to make company beneficial.
+
+_(In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
 - _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_
-- _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
+- _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_)_
 
 ### Problem Statement
 In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
