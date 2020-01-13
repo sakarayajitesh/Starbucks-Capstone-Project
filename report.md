@@ -33,9 +33,13 @@ _(In this section, you will want to clearly define the problem that you are tryi
 - _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_)_
 
 ### Metrics
-In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project. These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:
+The metrics that I have used here is **F1-score**, since accuracy score is not a relevant metric with imbalanced classes.
+
+```F1 Score = 2 * ( Precision * Recall ) / ( Precision + Recall )```
+
+_(In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project. These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:
 - _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_
-- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_
+- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_)_
 
 
 ## II. Analysis
