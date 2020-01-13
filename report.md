@@ -22,10 +22,15 @@ _(In this section, look to provide a high-level overview of the project in layma
 - _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_)_
 
 ### Problem Statement
-In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
+Building a model that predicts whether or not someone will respond to an offer based on given demographics and offer type.Thus there will be two possible outputs from the model, making it Binary Classification:
+
+1. A person will respond to an offer (1)
+2. A person will not respond to an offer(0)
+
+_(In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
 - _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_
 - _Have you thoroughly discussed how you will attempt to solve the problem?_
-- _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_
+- _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_)_
 
 ### Metrics
 In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project. These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:
