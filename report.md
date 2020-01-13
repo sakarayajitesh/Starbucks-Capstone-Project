@@ -46,11 +46,45 @@ _(In this section, you will need to clearly define the metrics or calculations y
 _(approx. 2-4 pages)_
 
 ### Data Exploration
-In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
+The data is contained in three files:
+
+1. portfolio.json - containing offer ids and meta data about each offer (duration, type, etc.)
+2. profile.json - demographic data for each customer
+3. transcript.json - records for transactions, offers received, offers viewed, and offers completed
+
+Here is the schema and explanation of each variable in the files:
+
+**1. portfolio.json**
+
+* id (string) - offer id
+* offer_type (string) - type of offer ie BOGO, discount, informational
+* difficulty (int) - minimum required spend to complete an offer
+* reward (int) - reward given for completing an offer
+* duration (int) - time for offer to be open, in days
+* channels (list of strings)
+
+**2. profile.json**
+
+* age (int) - age of the customer
+* became_member_on (int) - date when customer created an app account
+* gender (str) - gender of the customer (note some entries contain 'O' for other rather than M or F)
+* id (str) - customer id
+* income (float) - customer's income
+
+**3. transcript.json**
+
+* event (str) - record description (ie transaction, offer received, offer viewed, etc.)
+* person (str) - customer id
+* time (int) - time in hours since start of test. The data begins at time t=0
+* value - (dict of strings) - either an offer id or transaction amount depending on the record
+
+Here we can see some data is in number form and some data is in characters. Since a Machine Learning Model doesn't take input in characters, we need to convert the field which are not numbers to numbers by using **one-hot-encoding** method. Some of the values are high in number, it will be computationally expensive task, so we need to reduce these values such as field **_income_** in **profile.json** using **PCA** method.
+
+_(In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
 - _If a dataset is present for this problem, have you thoroughly discussed certain features about the dataset? Has a data sample been provided to the reader?_
 - _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_
 - _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_
-- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_
+- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_)_
 
 ### Exploratory Visualization
 In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
