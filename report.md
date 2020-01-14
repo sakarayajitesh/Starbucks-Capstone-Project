@@ -103,9 +103,11 @@ _(In this section, you will need to discuss the algorithms and techniques you in
 - _Is it made clear how the input data or datasets will be handled by the algorithms and techniques chosen?_)_
 
 ### Benchmark
-In this section, you will need to provide a clearly defined benchmark result or threshold for comparing across performances obtained by your solution. The reasoning behind the benchmark (in the case where it is not an established result) should be discussed. Questions to ask yourself when writing this section:
+Since it is a binary classification problem we need to use a Binary Classifier to solve this problem which will get output as 0 or 1. We can also try to use Deep Neural Networks to solve and check on which model it performs better by tuning the hyperparameters and compare the models using **F1 score**.
+
+_(In this section, you will need to provide a clearly defined benchmark result or threshold for comparing across performances obtained by your solution. The reasoning behind the benchmark (in the case where it is not an established result) should be discussed. Questions to ask yourself when writing this section:
 - _Has some result or value been provided that acts as a benchmark for measuring performance?_
-- _Is it clear how this result or value was obtained (whether by data or by hypothesis)?_
+- _Is it clear how this result or value was obtained (whether by data or by hypothesis)?_)_
 
 
 ## III. Methodology
