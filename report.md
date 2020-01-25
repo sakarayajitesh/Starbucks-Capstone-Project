@@ -114,10 +114,30 @@ _(In this section, you will need to provide a clearly defined benchmark result o
 _(approx. 3-5 pages)_
 
 ### Data Preprocessing
-In this section, all of your preprocessing steps will need to be clearly documented, if any were necessary. From the previous section, any of the abnormalities or characteristics that you identified about the dataset will be addressed and corrected here. Questions to ask yourself when writing this section:
+
+* **portfolio.json**
+
+  1. One-hot-encoding to be done to the categorial fields - "offer_type", "channels"
+ 
+* **profile.json**
+
+  1. Some of the rows in "gender" and "income" are Nan. we have dropped those rows.
+  2. "became_member_on" field has the date and need to be sperated as "year" and "month" columns.
+  
+* **transcript.json**
+
+  1. One-hot-encoding to be done to the categorial fields - "offer_type", "channels".
+  2. One-hot-encoding to be done to the categorial fields - "event".
+  3. In "value" field inside json object there are 2 keys i.e., "offer id" and "offer_id". These key names have been changed to              "offer_id".
+  4. Fill with '0' in "amount" and "reward".
+  
+* Merging "transcript" and "profile" with field "person" and "id" = transcript_profile
+* Merging "transcript_profile" and "portfolio" with field "offer_id" = transcript_profile_portfolio
+
+_(In this section, all of your preprocessing steps will need to be clearly documented, if any were necessary. From the previous section, any of the abnormalities or characteristics that you identified about the dataset will be addressed and corrected here. Questions to ask yourself when writing this section:
 - _If the algorithms chosen require preprocessing steps like feature selection or feature transformations, have they been properly documented?_
 - _Based on the **Data Exploration** section, if there were abnormalities or characteristics that needed to be addressed, have they been properly corrected?_
-- _If no preprocessing is needed, has it been made clear why?_
+- _If no preprocessing is needed, has it been made clear why?_)_
 
 ### Implementation
 In this section, the process for which metrics, algorithms, and techniques that you implemented for the given data will need to be clearly documented. It should be abundantly clear how the implementation was carried out, and discussion should be made regarding any complications that occurred during this process. Questions to ask yourself when writing this section:
