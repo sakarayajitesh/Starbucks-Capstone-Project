@@ -82,10 +82,6 @@ Here we can see some data is in number form and some data is in characters. Sinc
 *  The chart shows between popular offer types.
 ![popular_offers](images/popular_offers.PNG)
 
-_(In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
-- _Have you visualized a relevant characteristic or feature about the dataset or input data?_
-- _Is the visualization thoroughly analyzed and discussed?_
-- _If a plot is provided, are the axes, title, and datum clearly defined?)_
 
 ### Algorithms and Techniques
 As we are predicting that a person will/not respond to a given offer, this will be binary classification problem.So I am using here are a Binary Classifier and a Neural Network as Neural Network can be used for almost any task.
