@@ -184,10 +184,13 @@ _(In this section, the final model and any supporting qualities should be evalua
 - _Can results found from the model be trusted?_)_
 
 ### Justification
-In this section, your model’s final solution and its results should be compared to the benchmark you established earlier in the project using some type of statistical analysis. You should also justify whether these results and the solution are significant enough to have solved the problem posed in the project. Questions to ask yourself when writing this section:
+
+As the model has 90% accuracy, if the model has been given the demographics of a person and an offer type it will give the correct output of wheather a person will respond to an offer or not.
+
+_(In this section, your model’s final solution and its results should be compared to the benchmark you established earlier in the project using some type of statistical analysis. You should also justify whether these results and the solution are significant enough to have solved the problem posed in the project. Questions to ask yourself when writing this section:
 - _Are the final results found stronger than the benchmark result reported earlier?_
 - _Have you thoroughly analyzed and discussed the final solution?_
-- _Is the final solution significant enough to have solved the problem?_
+- _Is the final solution significant enough to have solved the problem?_)_
 
 
 ## V. Conclusion
