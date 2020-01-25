@@ -161,10 +161,13 @@ _(In this section, the process for which metrics, algorithms, and techniques tha
 - _Was there any part of the coding process (e.g., writing complicated functions) that should be documented?_)_
 
 ### Refinement
-In this section, you will need to discuss the process of improvement you made upon the algorithms and techniques you used in your implementation. For example, adjusting parameters for certain models to acquire improved solutions would fall under the refinement category. Your initial and final solutions should be reported, as well as any significant intermediate results as necessary. Questions to ask yourself when writing this section:
+
+I have used Adam optimizer initially but the model didn't perform well. It was giving me usual outputs other than 0 to 1 even though I have used Sigmoid activation funtion. Later I changed it to SDG and it performmed well.
+
+_(In this section, you will need to discuss the process of improvement you made upon the algorithms and techniques you used in your implementation. For example, adjusting parameters for certain models to acquire improved solutions would fall under the refinement category. Your initial and final solutions should be reported, as well as any significant intermediate results as necessary. Questions to ask yourself when writing this section:
 - _Has an initial solution been found and clearly reported?_
 - _Is the process of improvement clearly documented, such as what techniques were used?_
-- _Are intermediate and final solutions clearly reported as the process is improved?_
+- _Are intermediate and final solutions clearly reported as the process is improved?_)_
 
 
 ## IV. Results
