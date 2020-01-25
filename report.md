@@ -140,10 +140,25 @@ _(In this section, all of your preprocessing steps will need to be clearly docum
 - _If no preprocessing is needed, has it been made clear why?_)_
 
 ### Implementation
-In this section, the process for which metrics, algorithms, and techniques that you implemented for the given data will need to be clearly documented. It should be abundantly clear how the implementation was carried out, and discussion should be made regarding any complications that occurred during this process. Questions to ask yourself when writing this section:
+
+Neural Network Model has been used to train the data here. **PyTorch**
+
+* **Model** :
+  1. Linear Layer = 24 -> 10
+  2. Dropout = 0.3
+  3. Linear Layer = 10 -> 1
+  4. Sigmoid()
+
+* **Optimizer** = SGD
+* **Criterion** = BCELoss
+* **Learning Rate** = 0.001
+* **Momentum** = 0.5
+* **Epochs** = 10
+
+_(In this section, the process for which metrics, algorithms, and techniques that you implemented for the given data will need to be clearly documented. It should be abundantly clear how the implementation was carried out, and discussion should be made regarding any complications that occurred during this process. Questions to ask yourself when writing this section:
 - _Is it made clear how the algorithms and techniques were implemented with the given datasets or input data?_
 - _Were there any complications with the original metrics or techniques that required changing prior to acquiring a solution?_
-- _Was there any part of the coding process (e.g., writing complicated functions) that should be documented?_
+- _Was there any part of the coding process (e.g., writing complicated functions) that should be documented?_)_
 
 ### Refinement
 In this section, you will need to discuss the process of improvement you made upon the algorithms and techniques you used in your implementation. For example, adjusting parameters for certain models to acquire improved solutions would fall under the refinement category. Your initial and final solutions should be reported, as well as any significant intermediate results as necessary. Questions to ask yourself when writing this section:
