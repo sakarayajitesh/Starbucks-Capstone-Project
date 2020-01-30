@@ -157,6 +157,15 @@ As the model has 90% accuracy, if the model has been given the demographics of a
 
 ### Reflection
 
+**Summary :**
+1) Analyzing the given three data files and performing preprocessing steps required to form the data.
+2) Spliting the data into training and test dataset.
+2) Constructing the Machine Learning Model.
+3) Traning the model with the training data.
+4) Testing the previously trained model with test data.
+
+The difficult part me was to reconstruct the given data into a meaningful data which can be used to train the model.
+
 ### Improvement
 
 
