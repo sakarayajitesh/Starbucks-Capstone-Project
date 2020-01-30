@@ -145,4 +145,18 @@ I have tested the model with 30% of the data which has not been used for trainin
 
 As the model has 90% accuracy, if the model has been given the demographics of a person and an offer type it will give the correct output of wheather a person will respond to an offer or not.
 
+## V. Conclusion
+
+### Free-Form Visualization
+
+![member_ship](images/member_ship.PNG)
+
+![offer_count](images/offer_count.PNG)
+
+![offer_success](images/offer_success.PNG)
+
+### Reflection
+
+### Improvement
+
 
