@@ -14,11 +14,11 @@ Not all users receive the same offer, and that is the challenge to solve with th
 
 Every offer has a validity period before the offer expires. As an example, a BOGO offer might be valid for only 5 days. You'll see in the data set that informational offers have a validity period even though these ads are merely providing information about a product; for example, if an informational offer has 7 days of validity, you can assume the customer is feeling the influence of the offer for 7 days after receiving the advertisement.
 
-If the company sends more offers or irrelavent offers to a person then there is no use. That's why they should send only relavent offers to a person who is likely going to use this offer which benefits the company.We need to predict who are more likely going to use a certain offer and send that offer only to them to make company beneficial.
+If the company sends more offers or irrelevant offers to a person then there is no use. That's why they should send only relevant offers to a person who is likely going to use this offer which benefits the company. We need to predict who are more likely going to use a certain offer and send that offer only to them to make company beneficial.
 
 
 ### Problem Statement
-Building a model that predicts whether or not someone will respond to an offer based on given demographics and offer type.Thus there will be two possible outputs from the model, making it Binary Classification:
+Building a model that predicts whether or not someone will respond to an offer based on given demographics and offer type. Thus there will be two possible outputs from the model, making it Binary Classification:
 
 1. A person will respond to an offer (1)
 2. A person will not respond to an offer(0)
@@ -44,7 +44,7 @@ Here is the schema and explanation of each variable in the files:
 **1. portfolio.json**
 
 * id (string) - offer id
-* offer_type (string) - type of offer ie BOGO, discount, informational
+* offer_type (string) - type of offer i.e, BOGO, discount, informational
 * difficulty (int) - minimum required spend to complete an offer
 * reward (int) - reward given for completing an offer
 * duration (int) - time for offer to be open, in days
@@ -84,9 +84,9 @@ Here we can see some data is in number form and some data is in characters. Sinc
 
 
 ### Algorithms and Techniques
-As we are predicting that a person will/not respond to a given offer, this will be binary classification problem.So I am using here are a Binary Classifier and a Neural Network as Neural Network can be used for almost any task.
+As we are predicting that a person will/not respond to a given offer, this will be binary classification problem. So I am using here are a Binary Classifier and a Neural Network as Neural Network can be used for almost any task.
 
-After I use both of the algoirthms, I will used the **Accuracy** metric to choose the best model out of these.
+After I use both of the algorithms, I will used the **Accuracy** metric to choose the best model out of these.
 
 ### Benchmark
 Since it is a binary classification problem we need to use a Binary Classifier to solve this problem which will get output as 0 or 1. We can also try to use Deep Neural Networks to solve and check on which model it performs better by tuning the hyperparameters and compare the models using **Accuracy**.
@@ -98,11 +98,11 @@ Since it is a binary classification problem we need to use a Binary Classifier t
 * **portfolio.json**
 
   1. One-hot-encoding to be done to the categorial fields - "offer_type", "channels"
- 
+
 * **profile.json**
 
   1. Some of the rows in "gender" and "income" are Nan. we have dropped those rows.
-  2. "became_member_on" field has the date and need to be sperated as "year" and "month" columns.
+  2. "became_member_on" field has the date and need to be separated as "year" and "month" columns.
   
 * **transcript.json**
 
@@ -132,7 +132,7 @@ Neural Network Model has been used to train the data here. **PyTorch**
 
 ### Refinement
 
-I have used Adam optimizer initially but the model didn't perform well. It was giving me usual outputs other than 0 to 1 even though I have used Sigmoid activation funtion. Later I changed it to SDG and it performmed well.
+I have used Adam optimizer initially but the model didn't perform well. It was giving me usual outputs other than 0 to 1 even though I have used Sigmoid activation function. Later I changed it to SDG and it performed well.
 
 
 ## IV. Results
@@ -143,7 +143,7 @@ I have tested the model with 30% of the data which has not been used for trainin
 
 ### Justification
 
-As the model has 90% accuracy, if the model has been given the demographics of a person and an offer type it will give the correct output of wheather a person will respond to an offer or not.
+As the model has 90% accuracy, if the model has been given the demographics of a person and an offer type it will give the correct output of whether a person will respond to an offer or not.
 
 ## V. Conclusion
 
@@ -159,9 +159,9 @@ As the model has 90% accuracy, if the model has been given the demographics of a
 
 **Summary :**
 1) Analyzing the given three data files and performing preprocessing steps required to form the data.
-2) Spliting the data into training and test dataset.
+2) Splitting the data into training and test dataset.
 2) Constructing the Machine Learning Model.
-3) Traning the model with the training data.
+3) Training the model with the training data.
 4) Testing the previously trained model with test data.
 
 The difficult part me was to reconstruct the given data into a meaningful data which can be used to train the model.
