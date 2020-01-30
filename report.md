@@ -168,4 +168,6 @@ The difficult part me was to reconstruct the given data into a meaningful data w
 
 ### Improvement
 
+The one aspect that can be improved is we can be able to predict the time in which a user will respond to a particular offer.
+
 
