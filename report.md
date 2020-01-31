@@ -60,6 +60,8 @@ Here is the schema and explanation of each variable in the files:
 * duration (int) - time for offer to be open, in days
 * channels (list of strings)
 
+![portfolio_head](images/portfolio_head.PNG)
+
 **2. profile.json**
 
 * age (int) - age of the customer
@@ -68,12 +70,18 @@ Here is the schema and explanation of each variable in the files:
 * id (str) - customer id
 * income (float) - customer's income
 
+![profile_head](images/profile_head.PNG)
+
+
 **3. transcript.json**
 
 * event (str) - record description (ie transaction, offer received, offer viewed, etc.)
 * person (str) - customer id
 * time (int) - time in hours since start of test. The data begins at time t=0
 * value - (dict of strings) - either an offer id or transaction amount depending on the record
+
+![transcript_head](images/transcript_head.PNG)
+
 
 Here we can see some data is in number form and some data is in characters. Since a Machine Learning Model doesn't take input in characters, we need to convert the field which are not numbers to numbers by using **one-hot-encoding** method. Some of the values are high in number, it will be computationally expensive task, so we need to reduce these values such as field **_income_** in **profile.json** using **PCA** method.
 
