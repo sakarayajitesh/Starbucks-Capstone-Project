@@ -23,6 +23,16 @@ Building a model that predicts whether or not someone will respond to an offer b
 1. A person will respond to an offer (1)
 2. A person will not respond to an offer(0)
 
+#### Steps:
+
+1. **Feature Engineering :** Removing the redundant features, Analysing the relation between features.
+2. **Preprocessing :** One-hot-encoding the data, handling "null" values, dimensionality reduction.
+3. **Splitting the data :** Splitting the data into training and test dataset.
+4. **Model :** Building a Deep Learning Model with PyTorch.
+5. **Training :** Training the model with train dataset.
+6. **Testing :** Testing the previously trained model with test data.
+7. **Tuning :** Tuning the hyperparameters of the model to get better results.
+
 
 ### Metrics
 The metrics that I have used here is **Accuracy**.
