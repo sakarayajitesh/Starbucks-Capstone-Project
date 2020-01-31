@@ -119,10 +119,10 @@ The network learns by examining individual records, generating a prediction for 
 Initially, all weights are random, and the answers that come out of the net are probably nonsensical. The network learns through training. Examples for which the output is known are repeatedly presented to the network, and the answers it gives are compared to the known outcomes. Information from this comparison is passed back through the network, gradually changing the weights. As training progresses, the network becomes increasingly accurate in replicating the known outcomes. Once trained, the network can be applied to future cases where the outcome is unknown.
 
 
-After I use both of the algorithms, I will used the **Accuracy** metric to choose the best model out of these.
+After I use both of the algorithms, I have used **F1-score** metric to choose the best model out of the benchmark models.
 
 ### Benchmark
-Since it is a binary classification problem we need to use a Binary Classifier to solve this problem which will get output as 0 or 1. We can also try to use Deep Neural Networks to solve and check on which model it performs better by tuning the hyperparameters and compare the models using **Accuracy**.
+As the benchmark models I have used KNeighborsClassifier and GaussianNB to compare aganist a Neural Network model using the metric **F1-score**.
 
 ## III. Methodology
 
