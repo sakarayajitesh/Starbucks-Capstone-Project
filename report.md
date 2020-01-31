@@ -35,9 +35,9 @@ Building a model that predicts whether or not someone will respond to an offer b
 
 
 ### Metrics
-The metrics that I have used here is **Accuracy**.
+The metrics that I have used here is **F1-score** since the data has unbalanced class distribution.
 
-```Accuracy = No. of correctly predicted / Total actual correct```
+```F1-score = 2 * (precision * recall) / (precision + recall)```
 
 
 ## II. Analysis
