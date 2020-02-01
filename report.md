@@ -172,11 +172,11 @@ I have used Adam optimizer initially but the model didn't perform well. It was g
 
 ### Model Evaluation and Validation
 
-I have tested the model with 30% of the data which has not been used for training the model and got 90% accuracy.
+I have tested the model with 30% of the data which has not been used for training the model and got 0.93 f1-score.
 
 ### Justification
 
-As the model has 90% accuracy, if the model has been given the demographics of a person and an offer type it will give the correct output of whether a person will respond to an offer or not.
+As the model has 0.93 f1-score, if the model has been given the demographics of a person and an offer type it will give the correct output of whether a person will respond to an offer or not.
 
 ## V. Conclusion
 
